@@ -116,6 +116,23 @@ export default class FindOwnersPage extends React.Component<IFindOwnersPageProps
               </div>
             </div>
           </form>
+
+    <h2>Owners</h2>
+    <table className='table table-striped'>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th className='hidden-sm hidden-xs'>Address</th>
+          <th>City</th>
+          <th>Telephone</th>
+          <th className='hidden-xs'>Pets</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
         </section>
         <OwnersTable owners={owners} />
         <Link className='btn btn-default' to='/owners/new'> Add Owner</Link>
