@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
 
-    <title>Spring Boot Petclinic React Example</title>
-  </head>
+<head lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
 
-  <body>
-    <div id='mount'></div>
-  </body>
+  <title>Spring Boot Petclinic React Example</title>
+</head>
 
-  <!-- dist/bundle.js will be created by Webpack -->
-  <script type="text/javascript"
-          src="/dist/bundle.js">
+<body>
+  <div id='mount'></div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script>
+    $(function () {
+      $(".navbar-toggle").sideNav();
+    });
   </script>
+</body>
+
+<!-- dist/bundle.js will be created by Webpack -->
+<script type="text/javascript" src="/dist/bundle.js">
+</script>
+
 </html>
