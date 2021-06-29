@@ -114,6 +114,10 @@ export default class FindOwnersPage extends React.Component<IFindOwnersPageProps
               <div className='col-sm-offset-2 col-sm-10'>
                 <button type='button' onClick={this.submitSearchForm} className='btn btn-default'>Find Owner</button>
               </div>
+              <div className='form-group'>
+              <OwnersTable owners={owners} />
+        <Link className='btn btn-default' to='/owners/new'> Add Owner</Link>
+              </div>
             </div>
           </form>
 
@@ -134,8 +138,6 @@ export default class FindOwnersPage extends React.Component<IFindOwnersPageProps
     </table>
 
         </section>
-        <OwnersTable owners={owners} />
-        <Link className='btn btn-default' to='/owners/new'> Add Owner</Link>
       </span>
     );
   }
